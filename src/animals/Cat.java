@@ -7,12 +7,16 @@ public class Cat extends Animals {
     private final int swim;
 
     private final double jump;
+    
+    public static int counter;
 
     public Cat(int run, int swim, double jump) {
         super(run, 0, jump);
         this.run = run;
         this.swim = swim;
         this.jump = jump;
+        
+        Cat.counter++;
     }
 
     @Override
