@@ -7,6 +7,8 @@ public class Dog extends Animals {
     private final int swim;
 
     private final double jump;
+    
+    public static int counter;
 
 
     public Dog(int run, int swim, double jump) {
@@ -14,6 +16,8 @@ public class Dog extends Animals {
         this.run = run;
         this.swim = swim;
         this.jump = jump;
+        
+        Dog.counter++;
     }
 
     @Override
